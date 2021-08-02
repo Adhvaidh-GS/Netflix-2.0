@@ -1,0 +1,480 @@
+body{
+   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+    text-decoration: none;
+    cursor: default;
+}
+
+
+.sidebar{
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    overflow-y: scroll;
+    background: rgba(14, 14, 14, 0.966);
+    top: 0;
+}
+
+.sidebar li{
+    padding-left: 20px;
+}
+
+.sidebar li:hover{
+    color: rgba(255, 255, 255, 0.89);
+    background: rgba(197, 195, 195, 0.164);
+}
+
+.sidebar header{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.678);
+    line-height: 51px;
+}
+
+.break{
+    border: 1.5px solid;
+    background: #000;
+    color: black;
+}
+
+.notification i{
+    padding-left: 150px;
+}
+
+.download i {
+    padding-right: 10px;
+}
+
+
+/* Profile Section Starts Here */
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0 20px 10px;
+    padding-bottom: 20px;
+}
+
+.profile img{
+    width: 50px;
+    padding-top: 5px;
+    background: linear-gradient(rgb(13, 57, 68), rgb(131, 159, 167));
+    /* background: rgb(48, 120, 179); */
+}
+
+.profile h1{
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+}
+
+.profile i{
+    padding-left: 100px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Sidebar fa-bars*/
+
+#check{
+    display: none;
+}  
+
+/* label #btn,label #cancel{
+    position: absolute;
+} */
+
+label #btn{
+    left: 20px;
+    top: 25px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    cursor: pointer;
+}
+
+/* label #cancel{
+    z-index: 1111;
+    left: 195px;
+    top: 17px;
+} */
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~label #btn{
+    left: 300px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* .showcase{
+    position:relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+ */
+
+/* header logo */
+
+
+
+ /* Showcase Starts Here */
+.showcase video{
+    width: 100%;
+    z-index: -1;
+}
+
+.logo img{
+    width: 120px;
+    position: absolute;
+    top: 25px;
+    left: 80px;
+}
+
+.search i{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 92%;
+    font-size: 23px;
+    padding-top: 35px;
+}
+
+.search i:last-child{
+    padding-left: 50px;
+}
+
+
+.text{
+    font-size: 62px;
+    color: rgb(255, 255, 255);
+    margin-top: -45%;
+    left: 5%;
+    position: absolute;
+}
+
+.text-1{
+    color: rgb(255, 255, 255);
+    margin-top: -25%;
+    left: 5%;
+    position: absolute;
+}
+
+.text-1 p{
+    font-size: 24px;
+    max-width: 500px;
+    padding-top: 20px;
+}
+
+.text-1 button:first-child{
+    margin-right: 15px;
+}
+
+
+.icons{
+    padding-right: 10px;
+}
+
+
+
+.ctn{
+    color: white;
+    padding: 15px 40px;
+    font-size: 16px;
+    background-color:rgba(73, 73, 71, 0.658); 
+    border: none;
+    border-radius: 2px;
+}
+
+/* rgba(121, 121, 120, 0.658) */
+
+
+.ctn:hover{
+    background: rgba(255, 255, 255);
+    color: black;
+}
+
+/* 
+.right-banner{
+    display: flex;
+    top:85%;
+    left: 90.2%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.i-border i{
+    padding: 10px;
+    color: white;
+}
+
+.right-banner .i-border{
+    border: 2px solid;
+    border-color: rgba(122, 120, 120, 0.445);
+    border-radius: 60% ;
+    color: white;
+    margin-right: 20px;
+}
+
+
+.badge-border{
+    background:  rgb(255, 255, 255);
+    padding: 2px;
+}
+
+.right-banner .badge{
+    background: rgba(99, 98, 98, 0.445) ;
+    padding: 10px 29px;
+}
+
+.right-banner .badge span{
+    color: white;
+}
+ */
+
+
+
+/* Image Container */
+.container{
+    padding-top: 20px;
+    margin-top: -0.5%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: border-box;
+    background: #000;
+}
+
+.container span{
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 19px;
+}
+
+.container img{
+    padding-right: 10px;
+    width: 150px;
+    height: 220px;
+    padding-left: 10px;
+    
+}
+
+.posters{
+    padding-top: 10px;
+    background-image:  linear-gradient( rgba(0, 0, 0, 0.733), #111);
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll; 
+
+
+}
+
+
+.footer{
+    background: #000;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 7px;
+    padding-top: 50px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.footer h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-break{
+   
+    border: 1px solid;
+    color: red;
+}
+
+
+/* .container-1{
+    width: 100%;
+    background: #000;
+    margin-top: 15%;
+}
+
+.container-1 img{
+    width: 150px;
+    height: 220px;
+}
+
+.container-1 .posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.container-1 span{
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 19px;
+    padding-top: 50px;
+} */
+
+
+.posters::-webkit-scrollbar{
+    height: 4px;
+}
+
+
+
+/* Scrollbar goes here */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+ 
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(245, 41, 41, 0.836); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+
+@media only screen and (max-width: 1000px) {
+        
+    .profile h1{
+        font-size: 15px;
+    }
+
+    .logo img{
+        width: 90px;
+        left: 60px;
+    }
+
+    label #btn{
+        font-size: 23px;
+    }
+
+    .search a i{
+        font-size: 20px;
+        left: 90%;
+    }
+
+    .text{
+        font-size: 40px;
+    }
+    .ctn{
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+    .text-1 p{
+        font-size: 20px;
+    }
+
+
+}  
+
+
+
+
+@media only screen and (max-width: 720px) {
+    
+    .logo img{
+        width: 80px;
+        left: 60px;    
+    }
+
+    label #btn{
+        font-size: 20px;
+    }
+    
+    .search a i{
+        font-size: 18px;
+    }
+
+    .text{
+        font-size: 35px;
+    }
+    .ctn{
+        font-size: 12px;
+    }
+    .text-1 p{
+        font-size: 18px;
+        max-width: 400px;
+    }
+    
+    
+}  
+
+@media only screen and (max-width: 720px) {
+    .search a i{
+        font-size: 18px;
+        left: 85%;
+    }
+
+}  
+
+
+
+
+@media only screen and (max-width: 550px) {
+    
+    .text h1{
+        margin-top: 90%;
+        margin-left:80%;
+        z-index: -1;
+    }
+
+
+    .profile h1{
+        font-size: 15px;
+    }
+
+    .showcase video{
+        min-width: 100%;
+    }
+    .logo img{
+        width: 80px;
+        left: 60px;  
+    }
+    
+    label #btn{
+        font-size: 20px;
+    }
+    
+    .search a i{
+        font-size: 18px;
+        left: 80%;
+    }
+
+    .text{
+        font-size: 20px;
+        margin-top: -40%;
+    }
+    .ctn{
+        display: none;
+    }
+    .text-1 p{
+        visibility: hidden;
+    }
+
+    .sidebar li{
+        font-size: 15px;
+    }
+}  
